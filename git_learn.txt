@@ -1,21 +1,3 @@
-mkdir utils
-cd utils
-touch utils.py
-vi utils.py
-vim utils.py
-dir
-cat utils.py
-cd ..
-dit pageObjects
-mkdir pageObjects
-cdc pageObjects
-git add .
-git commit -m "my new commits"
-git push origin
-git branch sowmya_branch_pytest_git_demo
-git add .
-git commit -m "committing to the branch"
-git fetch
 git checkout sowmya_branch_pytest_git_demo
 git add .
 git commit -m "now we branched checkedout and added"
@@ -47,4 +29,22 @@ git commit -m "committing"
 git push origib  sowmya_branch_pytest_git_demo
 git push origin  sowmya_branch_pytest_git_demo
 doskey /history
+doskey /history > git_learn.txt
+dir
+cat git_learn.txt
+git add *
+git commit -m "one file added"
+git push origin sowmya_branch_pytest_git_demo
+git pull
+git pull remote sowmya_branch_pytest_git_demo
+git pull sowmya_branch_pytest_git_demo
+git pull pytest_git_demo
+git push origin master
+git pull origin master
+git add git_learn.txt
+git commit -m "now will it work"
+git status
+git add *
+git add git_learn.txt
+git commit -m "commit from asian time"
 doskey /history > git_learn.txt
