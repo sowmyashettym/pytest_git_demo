@@ -1,0 +1,50 @@
+mkdir utils
+cd utils
+touch utils.py
+vi utils.py
+vim utils.py
+dir
+cat utils.py
+cd ..
+dit pageObjects
+mkdir pageObjects
+cdc pageObjects
+git add .
+git commit -m "my new commits"
+git push origin
+git branch sowmya_branch_pytest_git_demo
+git add .
+git commit -m "committing to the branch"
+git fetch
+git checkout sowmya_branch_pytest_git_demo
+git add .
+git commit -m "now we branched checkedout and added"
+git push origin
+git push origin sowmya_branch_pytest_git_demo
+git pull
+git pull master
+git pull main
+git pull pytest_git_demo
+git pull sowmya_branch_pytest_git_demo
+git branch pytest_git_demo
+git pull pytest_git_demo
+git statsy
+git status
+git init
+git remote -v
+git remote add origin https://github.com/sowmyashettym/pytest_git_demo.git
+ssh -T git@github.com
+ls ~/.ssh
+dir
+ls $HOME
+dir C:\Users\YourUsername\.ssh
+cls
+git status
+git add .
+git add *
+git status
+git commit -m "committing"
+git push origib  sowmya_branch_pytest_git_demo
+git push origin  sowmya_branch_pytest_git_demo
+doskey /history
+doskey /history > git_learn.txt
