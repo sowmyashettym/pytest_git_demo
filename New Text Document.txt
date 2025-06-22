@@ -1,0 +1,14 @@
+0e6a53f (HEAD -> sowmya_branch_pytest_git_demo, origin/sowmya_branch_pytest_git_demo) Copied file
+6a11a5d Merge branch 'main' of https://github.com/sowmyashettym/pytest_git_demo into sowmya_branch_pytest_git_demo I want the main and this branch to be same
+eaeefde (origin/main, origin/HEAD, main) Merge branch 'main' of https://github.com/sowmyashettym/pytest_git_demo
+59c0ff5 'new'
+8422d90 Resolved merge conflict in README.md
+7b4f19a Merge pull request #3 from sowmyashettym/sowmya_branch_pytest_git_demo
+da28bcc added one file in userdata
+1ac992e one file added
+6d1a148 Merge pull request #2 from sowmyashettym/main
+20ad135 one file added
+b0bb86f Merge pull request #1 from sowmyashettym/sowmya_branch_pytest_git_demo
+d6e267a my new commits
+777f875 my new commits
+0273094 Initial commit
