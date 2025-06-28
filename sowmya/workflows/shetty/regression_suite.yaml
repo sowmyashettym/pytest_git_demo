@@ -6,6 +6,8 @@ on:
   pull_request:
       branches:
         - main
+   schedule:
+      - cron 30 2 * * * 1-5
  jobs:
     run-test:
       run-on:ubuntu-latest
