@@ -21,7 +21,7 @@ if result.when =="call" and result.failed:
       timestr = datetime.now().strftime("%y_%m_%d_%H_%M_%S)
       screenshots_dir = os.path.join(os.getcwd(),"screenshots")
       os.makedirs(screenshots_dir,exist_ok=True)
-      file_name = f"failed_{timestr}.png"
+      file_name = f"failed_{item.name}_{timestr}.png"
       filepath = os.path.join(screenshots_dir,file_name)
       driver.save_screenshot(filepath)
       pytest_html = item.config.pluginmanager.get_plugin("html")
