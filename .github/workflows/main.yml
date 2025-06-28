@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout code
-      - uses: actions/upload-artifact@v4
+      - uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -33,7 +33,7 @@ jobs:
           pytest --html=reports/report.html -s -v --self-contained-html
 
       - name: Upload test report
-        uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: pytest-report
           path: reports/report.html
