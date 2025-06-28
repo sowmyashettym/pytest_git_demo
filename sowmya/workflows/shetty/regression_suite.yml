@@ -22,7 +22,7 @@ on:
   
         - name : Install dependencies
           run:
-             python -m pip instakk --upgrade pip
+             python -m pip install --upgrade pip
              pip install - r requirements.txt
         - name: Run test
           run: pytest --html=reports/report.html -s -v --self-contained-html
