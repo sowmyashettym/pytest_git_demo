@@ -1,35 +1,39 @@
-name :Regression suite
-on: 
-   push : 
-      branches :
-         - main
+name: Regression suite
+
+on:
+  push:
+    branches:
+      - main
   pull_request:
-      branches:
-        - main
-   schedule:
-      - cron 30 2 * * * 1-5
- jobs:
-    run-test:
-      run-on:ubuntu-latest
+    branches:
+      - main
+  schedule:
+    - cron: '30 2 * * 1-5'  # At 02:30 UTC, Monday–Friday
+
+jobs:
+  run-test:
+    runs-on: windows-latest
+
     steps:
       - name: Checkout code
-        uses:actions/checkout@v2
-  
-      - name : Set up python
+        uses: actions/checkout@v2
+
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version:'3.9'
-  
-        - name : Install dependencies
-          run:
-             python -m pip instakk --upgrade pip
-             pip install - r requirements.txt
-        - name: Run test
-          run: pytest --html=reports/report.html -s -v --self-contained-html
-          
-        - name : upload report
-          uses:actions/upload-artifact@v2
-          with:
-             name: pytest-report
-             path: report.html
-        
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest --html=reports/report.html -s -v --self-contained-html
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: pytest-report
+          path: reports/report.html
