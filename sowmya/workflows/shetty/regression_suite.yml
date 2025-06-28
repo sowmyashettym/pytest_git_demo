@@ -13,10 +13,10 @@ on:
       run-on:ubuntu-latest
     steps:
       - name: Checkout code
-        uses:actions/checkout@v2
+        uses:actions/checkout@v3
   
       - name : Set up python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version:'3.9'
   
@@ -28,7 +28,7 @@ on:
           run: pytest --html=reports/report.html -s -v --self-contained-html
           
         - name : upload report
-          uses:actions/upload-artifact@v2
+          uses:actions/upload-artifact@v3
           with:
              name: pytest-report
              path: report.html
